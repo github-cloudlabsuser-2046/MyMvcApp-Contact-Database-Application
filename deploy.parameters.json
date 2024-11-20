@@ -1,0 +1,2 @@
+az group create --name MyResourceGroup --location "East US"
+az deployment group create --resource-group MyResourceGroup --template-file azuredeploy.json --parameters webAppName=myMvcApp appServicePlanName=myAppServicePlan
